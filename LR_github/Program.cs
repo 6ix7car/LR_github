@@ -6,6 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Программа, для сложения двуз чисел."); //добавил
             Console.WriteLine("Введите первое число:");
             int num1 = int.Parse(Console.ReadLine());
 
