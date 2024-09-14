@@ -12,9 +12,31 @@ namespace ConsoleApp1
 
             Console.WriteLine("Введите второе число:");
             int num2 = int.Parse(Console.ReadLine());
+            
+            //добавил
+            Console.WriteLine("Введите операцию (+, -, *, /):");
+            string operation = Console.ReadLine();
 
-            int sum = num1 + num2;
-            Console.WriteLine("Сумма: " + sum);
+            switch (operation)
+            {
+                case "+":
+                    Console.WriteLine($"Сумма: {num1 + num2}");
+                    break;
+                case "-":
+                    Console.WriteLine($"Разность: {num1 - num2}");
+                    break;
+                case "*":
+                    Console.WriteLine($"Произведение: {num1 * num2}");
+                    break;
+                case "/":
+                    Console.WriteLine($"Частное: {num1 / num2}");
+                    break;
+                default:
+                    Console.WriteLine("Неизвестная операция");
+                    break;
+            }
+            //
+
             Console.ReadKey();
         }
     }
